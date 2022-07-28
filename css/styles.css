@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-shadow: 62.5%;
+}
+
+/* TYPOGRAPHY */
+body {
+  margin: 0;
+}
