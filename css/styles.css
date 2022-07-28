@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-neutral-white: #eee;
+  --border-radius: 30px;
 }
 
 *,
@@ -71,10 +73,10 @@ a {
 }
 
 .link-arrow {
-  text-transform: uppercase;
   color: var(--color-accent);
   font-size: 2rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .link-arrow::after {
@@ -90,5 +92,38 @@ a {
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* BADGES */
+.badge {
+  border-radius: var(--border-radius);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: var(--color-neutral-white);
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: var(--color-neutral-white);
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
